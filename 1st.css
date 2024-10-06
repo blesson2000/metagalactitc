@@ -169,3 +169,7 @@ body {
         font-size: 2rem; /* Reduce font size on smaller screens */
     }
 }
+.fnt{
+    color: black;
+    font-family: Courier, 'Times New Roman';
+}
