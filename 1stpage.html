@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="1st.css" />
+    <title>Metagalactic Warriors</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="log.png" alt="Logo" />
+        <!-- Add your logo image here -->
+      </div>
+      <div class="project-name">Metagalactic Warriors</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="sim.html">3D Simulator</a></li>
+        <li><a href="#">Game</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Goodies</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <section id="sec1">
+      <h1 class="level-link" onclick="showContent('basics')">Basics</h1>
+      <div class="dynamic-box" id="basics">
+        <h2>1. What are exoplanets?</h2>
+        <p>
+          Exoplanets are planets that orbit stars outside our Solar System. They
+          can vary greatly in size, composition, and orbit. Some are gas giants
+          like Jupiter, while others are rocky like Earth. Exoplanets are found
+          in different types of star systems, including single-star and
+          multi-star systems. Some exoplanets may even have conditions that
+          could support liquid water, an important factor for the potential
+          existence of life.
+        </p>
+        <div class="next-button" onclick="showContent('finding')">Next</div>
+      </div>
+
+      <div class="dynamic-box" id="finding" style="display: none">
+        <h2>How are exoplanets found?</h2>
+        <p>
+          Scientists use various methods, such as the transit method, radial
+          velocity, direct imaging method, gravitational microlensing method,
+          and astrometry method to detect and study these distant worlds.
+        </p>
+        <div class="next-button" onclick="showContent('beginner')">Next</div>
+      </div>
+
+      <h1 class="level-link" onclick="showContent('beginner')">
+        Beginner: Exploration
+      </h1>
+      <div class="dynamic-box" id="beginner" style="display: none">
+        <h1>Methods of detecting Exoplanets</h1>
+        <h2>1 TRANSIT method</h2>
+        <!-- Correctly embedding the video elements -->
+        <video width="100%" height="auto" controls>
+          <source src="1st.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h2>2 RADIAL VELOCITY METHOD</h2>
+        <video width="100%" height="auto" controls>
+          <source src="2nd.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h2>3 Direct imageing</h2>
+        <video width="100%" height="auto" controls>
+          <source src="3rd.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h2>4 Gravitational micro lensing</h2>
+        <video width="100%" height="auto" controls>
+          <source src="4th.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h2>5 Asttrometry</h2>
+        <video width="100%" height="auto" controls>
+          <source src="5th.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="next-button" onclick="showContent('intermediate')">
+          Next
+        </div>
+      </div>
+
+      <h1 class="level-link" onclick="showContent('intermediate')">
+        Intermediate: Discovery
+      </h1>
+      <div class="dynamic-box" id="intermediate" style="display: none">
+        <h2>3. Intermediate Discovery Content</h2>
+        <p>
+          Search for Life: One of the biggest reasons to study exoplanets is the
+          possibility of finding life beyond Earth.Learning about planets in
+          habitable zones where liquid water could exist helps us understand the
+          potential for life elsewhere in the universe.
+        </p>
+        <div class="next-button" onclick="showContent('advanced')">Next</div>
+      </div>
+      <div class="dynamic-box" id="intermediate" style="display: none">
+        <h2>3. Intermediate Discovery Content</h2>
+        <p>
+          Understanding Planetary Systems: Exoplanet research expands our
+          knowledge of how planetary systems form and evolve. By comparing other
+          systems to our Solar System, we learn more about the processes that
+          shaped our own and discover new, previously unknown types of planets.
+        </p>
+        <div class="next-button" onclick="showContent('advanced')">Next</div>
+      </div>
+      <div class="dynamic-box" id="intermediate" style="display: none">
+        <h2>3. Intermediate Discovery Content</h2>
+        <p>
+          Origins of Life: By studying exoplanet atmospheres, climates, and
+          chemical compositions, we can better understand the factors that led
+          to life on Earth and how these might occur elsewhere, helping us probe
+          the origins of life itself. Technological and Scientific Progress: The
+          search for exoplanets drives advancements in technology, from space
+          telescopes to new data analysis techniques, which can have
+          applications beyond astronomy, benefiting other fields of science and
+          technology. Cosmic Perspective: Discovering exoplanets offers a sense
+          of our place in the universe, answering fundamental questions about
+          whether Earth is unique or one of many life-hosting worlds, and
+          expanding our cosmic awareness.
+        </p>
+        <div class="next-button" onclick="showContent('advanced')">Next</div>
+      </div>
+
+      <h1 class="level-link" onclick="showContent('advanced')">
+        Advanced: Conquest
+      </h1>
+      <div class="dynamic-box" id="advanced" style="display: none">
+        <h2>4. Advanced Conquest Content</h2>
+        <p>Content related to Advanced: Conquest goes here.</p>
+        <div class="next-button" onclick="showContent('legend')">Next</div>
+      </div>
+
+      <h1 class="level-link" onclick="showContent('legend')">
+        Legend: Mastery
+      </h1>
+      <div class="dynamic-box" id="legend" style="display: none">
+        <h2>5. Legend Mastery Content</h2>
+        <p>Content related to Legend: Mastery goes here.</p>
+        <div class="next-button" onclick="window.location.href='end.html'"">
+          Next
+        </div>
+      </div>
+    </section>
+
+    <script src="space.js"></script>
+    <script>
+      function showContent(id) {
+        // Hide all dynamic boxes
+        document.querySelectorAll(".dynamic-box").forEach((box) => {
+          box.style.display = "none";
+        });
+        // Show the selected box
+        document.getElementById(id).style.display = "block";
+      }
+
+      function hideAll() {
+        document.querySelectorAll(".dynamic-box").forEach((box) => {
+          box.style.display = "none";
+        });
+      }
+    </script>
+  </body>
+</html>
