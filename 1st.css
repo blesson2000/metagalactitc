@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.8); /* Slight transparency to navbar */
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Section Styling */
+#sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items */
+    justify-content: flex-start;
+    padding: 100px 20px 20px; /* Add top padding to prevent content from hiding behind the navbar */
+    background-color: #282c34;
+    color: white; /* Change text color to white for better contrast */
+}
+
+/* Dynamic Box Styling */
+.dynamic-box {
+    background-color: #61dafb;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    text-align: left; /* Align text to the left */
+    font-size: 1.2rem;
+    width: 100%;  /* Full width */
+    max-width: 800px; /* Limit max width for readability */
+    margin: 20px 0;  /* Margin for spacing above and below */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Next Button Styling */
+.next-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Font Size */
+@media (max-width: 768px) {
+    .dynamic-box {
+        font-size: 1rem;  /* Adjust font size on smaller screens */
+    }
+}
+
+/* Styling for the links */
+.level-link {
+    font-size: 2.5rem; /* Large size for the hyperlinks */
+    color: #61dafb;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Transition effect when hovering */
+.level-link:hover {
+    color: #21a1f1;
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Transition effect when clicking */
+.level-link:active {
+    transform: scale(0.95); /* Scale down slightly when clicking */
+    color: #007BFF;
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 768px) {
+    .level-link {
+        font-size: 2rem; /* Reduce font size on smaller screens */
+    }
+}

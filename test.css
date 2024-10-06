@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Section */
+.bg-section {
+  background-image: url("https://w0.peakpx.com/wallpaper/746/436/HD-wallpaper-shooting-stars-stars-shooting-colorful-planets-space-beautiful-universum-all-planet-dark-blue.jpg"); /* Assuming bg.jpeg is in the same directory */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Content Styling */
+.content form {
+  background-color: rgba(255, 255, 255, 0.8); /* Slight white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+#s1 {
+  font-family: "Raleway", sans-serif; /* Ensure you load or link the font in HTML */
+  font-optical-sizing: auto; /* This property is correct */
+  font-weight: 400; /* Choose a valid weight like 400 for normal, 700 for bold, etc. */
+  font-style: normal; /* This property is correct */
+}
+.congrats-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.congrats-box.show {
+  display: block;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(277, 0, 0, 0.9);
+}
+#congrats-message {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+/* 
+.firecracker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  animation: firecracker 2s infinite;
+}
+
+@keyframes firecracker {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+  eth nan pinne set akam /*

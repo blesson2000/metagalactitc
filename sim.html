@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Eyes Exoplanet System</title>
+    <style>
+        /* Reset some default browser styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the body to fill the screen */
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Wrapper div for the iframe to make it responsive */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Iframe should fill the entire container */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Make the page look clean by making sure there's no scrollbar overflow */
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container for responsive iframe -->
+    <div class="iframe-container">
+        <iframe 
+            src="https://eyes.nasa.gov/apps/exo/#/" 
+            title="NASA Eyes Exoplanet System" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
